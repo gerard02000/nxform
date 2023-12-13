@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 100px;
+  padding: 50px;
 }
 
 a {
@@ -13,6 +13,8 @@ a {
   background-color: blue;
   padding: 20px;
   border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 a:hover {
@@ -20,21 +22,54 @@ a:hover {
 }
 
 h1 {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
-input, button {
+input[type='text'],
+input[type='password'],
+input[type='file'],
+select,
+textarea,
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='range'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='email'],
+input[type='url'] {
   display: block;
-  font-size: 22px;
+  font-size: 16px;
   width: 100%;
-  margin: 10px auto;
-  padding: 6px;
-  border: solid 1px darkblue;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid darkblue;
   border-radius: 6px;
+}
+
+textarea {
+  height: 150px;
+}
+
+select {
+  height: 40px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin: 10px 5px; /* Ajusta el margen superior e inferior */
+  display: block;
 }
 
 button {
   background-color: lightskyblue;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 button:hover {
@@ -44,4 +79,5 @@ button:hover {
 
 button:disabled {
   background-color: lightgray;
+  cursor: not-allowed;
 }
